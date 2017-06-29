@@ -3,7 +3,7 @@ Ember CLI by default uses [Babel.js](https://babeljs.io/) to allow you to use to
 It will ensure that you can use the newest features in the language and know that they will be transformed to JavaScript that can run in every browser you support.
 That usually means generating ES5-compatible code that can work on any modern browser, back to Internet Explorer 9.
 
-But ES5 code is usually more verbose than the original Javascript, and over time, as browsers gain the ability to execute the new features in JavaScript and older browers loose users, many users won't really want this verbose code as it increases their app's size and load times.
+But ES5 code is usually more verbose than the original Javascript, and over time, as browsers gain the ability to execute the new features in JavaScript and older browsers lose users, many users won't really want this verbose code as it increases their app's size and load times.
 
 That is why Ember CLI exposes a way of configuring what browsers your app targets.
 It can figure out automatically what features are natively supported by the browsers you support,
@@ -23,7 +23,7 @@ module.exports = {
 ```
 
 That default configuration matches the wider set of browsers that Ember.js itself supports.
-Hower, if your app does not need to support IE anymore, you can change it to:
+However, if your app does not need to support IE anymore, you can change it to:
 
 ```config/targets.js
 module.exports = {
@@ -40,7 +40,7 @@ You are left with browsers that have full support of ES2015 and ES2016.
 If you inspect the compiled code, you will see that some features are not compiled to ES5 code anymore, such as arrow functions.
 
 This feature is backed by [Browserlist](https://github.com/ai/browserslist) and [Can I Use](http://caniuse.com/).
-These websites track usage stats of browsers, so you can use complex queries based on the userbase of every browser.
+These websites track usage stats of browsers, so you can use complex queries based on the user base of every browser.
 
 If you want to target all browsers with more than a 4% market share in Canada,
 you'd have the following options:
