@@ -60,6 +60,3 @@ Build targets can also be leveraged in other ways.
 Some addons might conditionally include polyfills only if needed.
 Some linters may emit warnings when using features not yet fully supported in your targets.
 Some addons may even automatically prefix unsupported CSS properties.
-
-
-
